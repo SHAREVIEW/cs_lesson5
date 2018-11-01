@@ -1,0 +1,11 @@
+Python 3.6.7 (v3.6.7:6ec5cf24b7, Oct 20 2018, 13:35:33) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> import requests
+>>> data = {"txUserID":"david.lee","txPwd":"David123"}
+>>> r = requests.post("https://eip.dediprog.com/dediprog/login.php",data=data)
+>>> r.headers
+{'Server': 'nginx', 'Date': 'Thu, 01 Nov 2018 04:59:51 GMT', 
+'Content-Type': 'text/html;
+ charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Set-Cookie': 'PHPSESSID=5ehpk2v0rlfr5mchb636gb4uo5;
+ path=/, userid=david.lee, userno=277, auth=U', 'Expires': 'Thu, 19 Nov 1981 08:52:00 GMT', 'Cache-Control': 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'Pragma': 'no-cache', 'Content-Encoding': 'gzip'}
+>>> 
